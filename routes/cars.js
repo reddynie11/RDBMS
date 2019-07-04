@@ -12,7 +12,7 @@ router.post('/:id', (req,res)=>{
     car.model = req.body.formmodel;
     car.year = req.body.formyear;
     Seller.findById(sellerid, (err, data)=>{
-        car.seller.push(data);
+        car.seller = data;
         car.save((err)=>{
             if (err){throw err;}
             else{res.json({'Status': 'Car deails saved'})}
