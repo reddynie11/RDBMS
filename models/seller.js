@@ -9,9 +9,9 @@ const sellerSch = new Schema({
     email : {
         type : String
     },
-    cars : [
+    cars : [{
         type : Schema.Types.ObjectId,
         ref : cars_m
-    ]
+    }]
 });
 module.exports = mongoose.model('seller_m',sellerSch,'seller_collection');
