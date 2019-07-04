@@ -11,7 +11,7 @@ const sellerSch = new Schema({
     },
     cars : [{
         type : Schema.Types.ObjectId,
-        ref : cars_m
+        ref : 'cars_m'
     }]
 });
 module.exports = mongoose.model('seller_m',sellerSch,'seller_collection');

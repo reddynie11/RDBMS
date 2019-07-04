@@ -12,9 +12,5 @@ router.get('/', (req,res)=>{
     })
 });
 
-router.get('/',(req,res)=>{
-    res.json('seller page')
-})
-
 
 module.exports = router;
